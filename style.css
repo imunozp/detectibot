@@ -941,3 +941,88 @@ h1 span {
 .opcion-grafica {
   min-height: 72px;
 }
+/* ===== VERSION MOVIL IPHONE / ANDROID ===== */
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .pantalla-inicio {
+    min-height: 100vh;
+    padding: 20px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .numero-paso,
+  .version-app,
+  .icono-sonido {
+    display: none;
+  }
+
+  .contenido-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .robot-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .robot {
+    width: 180px !important;
+    max-width: 80%;
+  }
+
+  .texto-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .texto-area h1 {
+    font-size: 52px !important;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .texto-area p {
+    font-size: 24px !important;
+    margin-bottom: 25px;
+  }
+
+  #btnComenzar {
+    width: 90%;
+    max-width: 320px;
+    font-size: 24px;
+    padding: 18px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .barra-inferior {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .info-programa {
+    font-size: 18px !important;
+    line-height: 1.4;
+    max-width: 90%;
+  }
+
+  .logo-pdi-img {
+    width: 120px !important;
+  }
+
+}
