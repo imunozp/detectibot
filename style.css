@@ -1026,3 +1026,116 @@ h1 span {
   }
 
 }
+/* ===== CORRECCIÓN DEFINITIVA PARA CELULAR ===== */
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  #app {
+    width: 100% !important;
+    min-height: 100vh !important;
+  }
+
+  .pantalla-inicio {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+    padding: 20px 16px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .numero-paso,
+  .version-app,
+  .icono-sonido {
+    display: none !important;
+  }
+
+  .contenido-principal {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
+  .robot-area {
+    height: auto !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .robot {
+    width: 190px !important;
+    max-height: none !important;
+    margin-top: 15px !important;
+  }
+
+  .texto-area {
+    width: 100% !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
+
+  .escudo {
+    font-size: 36px !important;
+    margin: 8px 0 !important;
+  }
+
+  h1 {
+    font-size: 46px !important;
+    letter-spacing: -2px !important;
+    line-height: 1 !important;
+  }
+
+  .texto-area p {
+    font-size: 22px !important;
+    margin: 16px 0 22px !important;
+    line-height: 1.25 !important;
+  }
+
+  #btnComenzar {
+    width: 88% !important;
+    max-width: 330px !important;
+    padding: 17px 20px !important;
+    font-size: 22px !important;
+    border-radius: 20px !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
+  .barra-inferior {
+    position: relative !important;
+    height: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    margin-top: 25px !important;
+    padding: 18px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    text-align: center !important;
+  }
+
+  .info-programa {
+    padding-left: 0 !important;
+    font-size: 17px !important;
+    line-height: 1.35 !important;
+  }
+
+  .info-programa::before {
+    display: none !important;
+  }
+
+  .logo-pdi-img {
+    width: 110px !important;
+  }
+}
